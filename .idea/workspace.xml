@@ -3,8 +3,44 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="03086373-928c-4c9e-b7c3-a0581917053b" name="Default Changelist" comment="" />
+    <list default="true" id="03086373-928c-4c9e-b7c3-a0581917053b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CommunityPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CommunityPostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/PostVotes.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/PostVotes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StorePostRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/StorePostRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/PostFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/PostFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/communities/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/communities/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/communities/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/communities/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/communities/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/communities/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/communities/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/communities/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/livewire/post-votes.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/post-votes.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/posts/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/posts/show.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +49,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -137,12 +176,14 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/posts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/resources/views/posts" />
       <recent name="$PROJECT_DIR$/resources/views/communities" />
       <recent name="$PROJECT_DIR$/app/Http/Requests" />
@@ -168,12 +209,27 @@
       <workItem from="1615208384284" duration="3169000" />
       <workItem from="1615240861536" duration="1845000" />
       <workItem from="1615381254847" duration="224000" />
-      <workItem from="1615505483580" duration="4568000" />
+      <workItem from="1615505483580" duration="4971000" />
+      <workItem from="1615536440946" duration="21341000" />
+      <workItem from="1615899630875" duration="33000" />
+      <workItem from="1617560017340" duration="8399000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="84" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614975276047">
@@ -185,12 +241,16 @@
     </state>
     <state x="503" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.799@0.25.1440.799" timestamp="1615048275356" />
     <state x="503" y="25" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.25.1440.801@0.25.1440.801" timestamp="1615507748812" />
-    <state x="385" y="150" width="670" height="676" key="search.everywhere.popup" timestamp="1615509992220">
+    <state x="368" y="42" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1615675693309">
+      <screen x="0" y="25" width="1440" height="801" />
+    </state>
+    <state x="368" y="42" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.25.1440.801@0.25.1440.801" timestamp="1615675693309" />
+    <state x="385" y="150" width="670" height="676" key="search.everywhere.popup" timestamp="1617576282093">
       <screen x="0" y="25" width="1440" height="801" />
     </state>
     <state x="385" y="149" width="670" height="673" key="search.everywhere.popup/0.25.1440.797@0.25.1440.797" timestamp="1615043710955" />
     <state x="385" y="149" width="670" height="675" key="search.everywhere.popup/0.25.1440.799@0.25.1440.799" timestamp="1615049678277" />
-    <state x="385" y="150" width="670" height="676" key="search.everywhere.popup/0.25.1440.801@0.25.1440.801" timestamp="1615509992220" />
+    <state x="385" y="150" width="670" height="676" key="search.everywhere.popup/0.25.1440.801@0.25.1440.801" timestamp="1617576282093" />
     <state x="385" y="150" width="670" height="679" key="search.everywhere.popup/0.25.1440.804@0.25.1440.804" timestamp="1614817787162" />
   </component>
 </project>

@@ -1,46 +1,47 @@
 @extends('layouts.app')
 
 @section('content')
-
-    <div class="card">
-        <div class="card-header">
+    <div class="card mb-3">
+        <div class="card-header position-relative min-vh-50 mb-2">
+            <div class="bg-holder rounded-3 rounded-bottom-0" style="background-image:url({{ $community->image == null ? "../assets/img/generic/4.jpg" : $community->image }});">
+            </div>
+            <!--/.bg-holder-->
+        </div>
+        <div class="card-body">
             <div class="row">
-                <div class="col-8">
-                    <h1>
-                        {{ $community->name }}
-                    </h1>
-                </div>
-                <div class="col-4 text-right">
-                    <a href="{{ route('communities.show', $community) }}"
-                       @if(request('sort', '') == '') style="font-size: 18px" @endif>Newest Posts</a>
-                    <br/>
-                    <a href="{{ route('communities.show', $community) }}?sort=popular"
-                       @if(request('sort', '') == 'popular') style="font-size: 18px" @endif>Popular Posts</a>
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col">
+                            <h4 class="mb-1"> {{ $community->name }}
+                                {{--                        <span data-bs-toggle="tooltip" data-bs-placement="right" title="" data-bs-original-title="Verified" aria-label="Verified">--}}
+                                {{--                            <small class="fa fa-check-circle text-primary" data-fa-transform="shrink-4 down-2"></small>--}}
+                                {{--                        </span>--}}
+                            </h4>
+                        </div>
+                        <div class="col">
+                            <a class="float-right btn btn-sm btn-primary rounded-pill me-1 mb-1" href="{{route('communities.posts.create', $community)}}">
+                                <span class="fas fa-pen"></span> Add Post
+                            </a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <h5>Filter: </h5>
+                        @livewire('filter-card', ['community' => $community])
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="card-body">
-            <a class="btn btn-primary" href="{{ route('communities.posts.create', $community) }}">Add Post</a>
-            <br/> <br/>
-            @forelse($posts as $post)
 
-                <div class="row">
-                    @livewire('post-votes', ['post' => $post])
-                    <div class="col-11">
-                        <a href="{{ route('communities.posts.show',[$community, $post]) }}">
-                            <h2>{{ $post->title }}</h2>
-                        </a>
-                        <p>{{ $post->created_at->diffForHumans() }}</p>
-                        <p>{{ \Illuminate\Support\Str::words($post->post_text, 10) }}</p>
-                    </div>
-                </div>
-                <hr>
-            @empty
-                <h3>No posts found...</h3>
-            @endforelse
-            {{ $posts->links() }}
-        </div>
+    <div>
+        @forelse($posts as $post)
+            @livewire('post-card',['post' => $post])
+        @empty
+            <h3>No posts found...</h3>
+        @endforelse
+        {{ $posts->links() }}
     </div>
 
 @endsection

@@ -53,7 +53,6 @@ class CommunityPostController extends Controller
         $community->posts()->create([
             'title' => $request->title,
             'post_text' => $request->post_text,
-            'post_url' => $request->post_url,
             'user_id' => auth()->id(),
             'post_image' => $image,
         ]);
@@ -68,7 +67,7 @@ class CommunityPostController extends Controller
      */
     public function show(Community $community, Post $post)
     {
-        $post->load('comments.user');
+        $post->load('comments.user')->latest();
         return view('posts.show', compact('community','post'));
     }
 
@@ -113,7 +112,6 @@ class CommunityPostController extends Controller
         $post->update([
             'title' => $request->title,
             'post_text' => $request->post_text,
-            'post_url' => $request->post_url,
             'user_id' => auth()->id(),
             'post_image' => $image,
             ]);

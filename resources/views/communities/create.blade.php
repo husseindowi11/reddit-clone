@@ -2,10 +2,14 @@
 
 @section('content')
     <div class="card">
-        <div class="card-header">{{ __('New Community') }}</div>
+        <div class="card-header bg-light d-flex flex-between-center py-3">
+            <h5>
+                {{ __('New Community') }}
+            </h5>
+        </div>
+        <form method="POST" action="{{ route('communities.store') }}">
+            <div class="card-body">
 
-        <div class="card-body">
-            <form method="POST" action="{{ route('communities.store') }}">
                 @csrf
 
                 <div class="form-group row">
@@ -29,7 +33,7 @@
 
                     <div class="col-md-6">
                                 <textarea id="description"
-                                          class="form-control @error('description') is-invalid @enderror"
+                                          class="form-control  @error('description') is-invalid @enderror"
                                           name="description" required autocomplete="description">
                                     {{old('description')}}
                                 </textarea>
@@ -64,16 +68,17 @@
                 </div>
 
 
-                <div class="form-group row mb-0">
-                    <div class="col-md-6 offset-md-4">
-                        <button type="submit" class="btn btn-primary">
+            </div>
+            <div class="card-footer bg-light p-3">
+                <div class="form-group">
+                    <div class="float-right">
+                        <button type="submit" class="btn btn-sm btn-success">
                             {{ __('create community') }}
                         </button>
                     </div>
                 </div>
-            </form>
-
-        </div>
+            </div>
+        </form>
     </div>
 
 @endsection

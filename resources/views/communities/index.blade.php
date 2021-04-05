@@ -3,10 +3,13 @@
 @section('content')
 
     <div class="card">
-        <div class="card-header">{{ __('My Communities') }}</div>
+        <div class="card-header bg-light d-flex flex-between-center py-3">
+            <h5>
+                {{ __('My Communities ☎️') }}
+            </h5>
+        </div>
 
         <div class="card-body">
-            <a class="mb-2 btn btn-primary" href="{{route('communities.create')}}">New Community</a>
             @if(Session('message'))
                 <div class="alert alert-info">
                     {{session('message')}}
@@ -26,8 +29,7 @@
                             <a href="{{route('communities.show', $community)}}">{{$community->name}}</a>
                         </td>
                         <td>
-                        <td>
-                            <a class="btn btn-sm btn-primary" href="{{route('communities.edit', $community)}}">edit</a>
+                            <a class="btn btn-sm btn-warning" href="{{route('communities.edit', $community)}}">edit</a>
                             <form method="POST" action="{{route('communities.destroy', $community)}}"
                                   class="d-inline-block">
                                 @method('DELETE')
@@ -41,6 +43,9 @@
                 @endforeach
                 </tbody>
             </table>
+            <div>
+                <a class="mb-2 btn btn-sm float-right btn-success" href="{{route('communities.create')}}">New Community 🤩</a>
+            </div>
         </div>
     </div>
 

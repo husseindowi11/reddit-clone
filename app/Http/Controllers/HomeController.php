@@ -24,7 +24,7 @@ class HomeController extends Controller
         $posts = Post::with('community')->WithCount(['postVotes' => function($query){
             $query->where('post_votes.created_at', '>', now()->subDays(7))
             ->where('vote', 1);
-        }])->orderBy('post_votes_count', 'desc')->take(10)->get();
+        }])->withCount('comments')->orderBy('post_votes_count', 'desc')->take(10)->get();
         return view('home', compact('posts'));
     }
 }

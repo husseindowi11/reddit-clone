@@ -10,12 +10,18 @@ class Post extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable =['community_id', 'user_id', 'title', 'post_text', 'post_image', 'post_url', 'votes'];
+    protected $fillable =['community_id', 'user_id', 'title', 'post_text', 'post_image', 'votes'];
 
     public function community()
     {
         return $this->belongsTo(Community::class);
     }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
 
     public function comments(){
         return $this->hasMany(Comment::class)->latest();
